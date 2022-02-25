@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego's Blog</title>
+    <link rel="stylesheet" href="css/Blog.css">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="nav-bar background h-nav ">
+        <img src="img/logo.jpg" alt="logo" class="logo">
+
+        <ul class="nav-list v-class">
+            <li><a href="#home">Home</a> </li>
+            
+            <li><a href="#service">Thoughts</a></li>
+            
+        </ul>
+        <div class="right-nav v-class">
+            
+            <button class="btn btn-logout" id="logout">Logout</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+    </nav>
+
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-bg">Welcome to my Blog! </p>
+                <p class="text-sm"> This is a space I have created to share a bit of insight into my interests, thoughts and opinions. Expression is essential to the human experience so I really hope you guys enjoy my attempt at taking part of it. Much Love.
+                </p>
+                
+
+
+            </div>
+            <div class="secondHalf">
+                <img src="img/logo.jpg" alt="Company Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id = "service"class="section-down">
+        <div class="para">
+            <p class="sectionTag text-bg">Are NFTs really a scam?</p>
+            <p class="sectionSubTag text-sm">NFT mania is sweeping the internet right now, but is it really a worthy investment?. Like a lot of people out there I'm conflicted when I ask this question after all digital ownership can be very difficult to understand, why would you pay huge amounts of money for a digital file?. Creators have always struggled to monetize their work and NFTs are a wonderful way for them to get rid of the corporate chains and take ownership of their art.
+                Some of the leading tech minds say that this is a revolutionary moment but with all the hype people forget about the downsides. NFTs have a clearly negative ecological impact because of the incredible amount of energy they require and, like real art, they can be used for nefarious purposes like money laundering and tax evasion in an even easier way. So this poses a very philosophical question, is this really a passing scam or is it the new way of assigning value to art?
+            </p>
+        </div>
+
+
+        <div class="thumbnail">
+            <img class="imgFluid" src="img/boredape.png" alt="logo Image">
+        </div>
+    </section>
+
+    <div class="hr-end">
+        <hr>
+    </div>
+
+    <section class="section-down reverse-order">
+        <div class="para">
+            <p class="sectionTag text-bg">Radiohead's In Rainbows, a truly blissful experience.</p>
+            <p class="sectionSubTag text-sm">In Rainbows is a very special album to me. Like all great artpieces, it resonates on a very personal and deep way, and speaks to the heart on such a fundamental level that only music can convey. Compared with their other albums, Radiohead deals with more digestible and relatable themes in this record. Pair that with Radiohead's ability to give albums wonderful structures and this becomes a masterpiece that allows people that have not listened to them before, to experience them at the highest level. I say at the highest level because I truly believe that in this record Radiohead figured out how to expand their sound while at the same time refining it. The album's name is aptly chosen: "In Rainbows". Colourful and rich in the various emotions that colour the album, it seems like an illustration of life. Apart from being filled with emotion the band manages to take the listener on a journey through them, ups and downs, joy and sadness, love and hate, painting the soundscapes with broad strokes brilliance. Recommending this album has become a common practice for me, so I wil do it again. Listen to this album and you will be reminded of what makes music a quintessential part of living.</p>
+            <div class="buttons">
+                <a href="#contact-block"><button id="ListenBtn" class="btn">Listen</button></a>
+            </div>
+        </div>
+
+
+        <div class="thumbnail">
+            <img class="imgFluid" src="./img/inraibows.jpg" alt="logo Image">
+        </div>
+    </section>
+
+    <hr>
+
+  
+    <div class="hr-end">
+        <hr>
+    </div>
+    
+
+    <script src="js/resp.js"></script>
+    
+
+</body>
+<script>
+    document.getElementById("logout").onclick = function () {
+        location.href="index.html"}
+
+
+     document.getElementById("ListenBtn").onclick = function () {
+        window.open("https://youtube.com/playlist?list=OLAK5uy_lvqkQRb8iVo2obChPXi9XFRLoIyaxbTj8")}
+    
+
+</script>
+
+
+
+</html>

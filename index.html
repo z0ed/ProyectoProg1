@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Olmedo</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+</head>
+<body>
+    <div class="LoginBox">
+        <img class="avatar" src="img/logo.jpg" alt="LogoD">
+        <h1>Log In</h1>
+        <form id="LoginForm">
+            
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password">
+
+            <input  id="submit-button" type="submit" value="Log In">
+        </form>
+    </div>
+</body>
+<script>
+    const loginForm = document.getElementById("LoginForm");
+    const loginButton = document.getElementById("submit-button");
+
+    
+    loginButton.addEventListener("click", (e) =>{
+        e.preventDefault();
+    const user = LoginForm.username.value;
+    const pass = LoginForm.password.value;
+
+    if(user === "diego10" && pass === "messi")
+    {
+        alert("Succesful login");
+        document.getElementById("submit-button").onclick = function () {
+        location.href= "PreloaderIndex.html"}
+    } 
+    else
+    {
+        alert("Nope");
+    }
+});
+    
+</script>
+</html>
